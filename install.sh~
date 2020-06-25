@@ -1,0 +1,14 @@
+#!/bin/sh
+
+LIB_DIR="$HOME/s7lib"
+
+if [ ! -d $LIB_DIR ] then
+	mkdir $LIB_DIR
+	mkdir $LIB_DIR/include/
+fi
+
+cp src/s7lib.c $LIB_DIR/
+cp src/s7lib_parser.c $LIB_DIR/
+cp src/include/s7lib.h $LIB_DIR/include/
+cp src/include/s7lib_parser.h $LIB_DIR/include/
+
